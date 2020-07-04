@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;0,800;1,400&display=swap');
+
+@import 'vars.scss';
+@import 'sidebar.scss';
+@import 'header.scss';
+@import 'hero.scss';
+@import 'intro.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Gabriola';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Gabriola'), url('../fonts/gabriola.woff') format('woff');
+}
+
+html {
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font: 16px/1.6em 'Open Sans', sans-serif;
+  background: #f6f6f6;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+
+.page {
+  display: flex;
+}
+
+.content {
+  margin-left: 4rem;
+  width: 100%;
+}

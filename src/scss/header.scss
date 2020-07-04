@@ -1,0 +1,61 @@
+header.main {
+  position: fixed;
+  right: 0;
+  width: calc(100% - 5rem);
+  z-index: 998;
+  padding: 1rem 0;
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  a.logo {
+    font-family: 'Gabriola';
+    font-size: 2.5rem;
+    line-height: 0.2em;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    .icon {
+      img {
+        width: 35px;
+        margin-right: 0.25em;
+      }
+    }
+  }
+  .right {
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    nav.top {
+      ul {
+        display: flex;
+        li {
+          list-style: none;
+          a {
+            color: #fff;
+            display: block;
+            text-decoration: none;
+            padding: 1rem 1.75em;
+          }
+          &.cart {
+            a {
+              img {
+                width: 30px;
+                margin-top: -0.3rem;
+              }
+            }
+          }
+        }
+      }
+    }
+    .btn {
+      margin-left: 5rem;
+      border: 1px solid #fff;
+      padding: 0.5rem 1.5rem;
+      border-radius: 3rem;
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+}
