@@ -1,5 +1,5 @@
 ---
-templateKey: 'rezepte-page'
+templateKey: 'recipes-page'
 path: /rezepte
 title: Leckere Rezepte
 ---
