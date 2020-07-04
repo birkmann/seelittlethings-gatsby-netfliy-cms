@@ -38,7 +38,7 @@ body {
   display: flex;
 }
 
-.content {
-  margin-left: 4rem;
-  width: 100%;
+.page-main {
+  margin-left: 5rem;
+  width: calc(100% - 5rem);
 }

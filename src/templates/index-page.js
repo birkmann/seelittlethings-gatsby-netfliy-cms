@@ -27,12 +27,8 @@ export const IndexPageTemplate = ({
     >
       <div className='container'>
         <div className='text'>
-          <h2>Ayurveda, Rezepte, &amp; Lifestyle.</h2>
-          <p>
-            Ich zeige dir, wie du die Welt bereisen kannst, wie du mit
-            Selbstliebe anfängst, für dich selbst einzustehen und warum es so
-            wichtig ist, deiner eigenen Wahrheit zu folgen.
-          </p>
+          <h2>{title}</h2>
+          <p>{subheading}</p>
           <div className='btn-wrapper'>
             <a href='' className='btn primary'>
               Registrieren
@@ -61,8 +57,10 @@ export const IndexPageTemplate = ({
         </div>
       </div>
     </div>
-    <h1> {title}</h1>
-    <h2> {subheading}</h2>
+    <div className='container'>
+      <h1> {title}</h1>
+      <h2> {subheading}</h2>
+    </div>
     <section className='section section--gradient'>
       <div className='container'>
         <div className='section'>
