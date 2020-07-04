@@ -1,9 +1,9 @@
 ---
 templateKey: index-page
-title: Great coffee with a conscience 123
+title: Ayurveda, Rezepte, & Lifestyle. 123
 image: /img/jazmin-quaynor-8ioenvmof-i-unsplash.jpg
-heading: Great coffee with a conscience
-subheading: Support sustainable farming while enjoying a cup
+heading: Heading
+subheading: Subheading
 mainpitch:
   title: Why Kaldi
   description: >
