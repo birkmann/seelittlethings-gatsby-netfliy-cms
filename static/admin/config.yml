@@ -120,9 +120,9 @@ collections:
                   },
                 ],
             }
-      - file: 'src/pages/recipes/index.md'
+      - file: 'src/pages/rezepte/index.md'
         label: 'Rezepte'
-        name: 'recipes'
+        name: 'rezepte'
         fields:
           - {
               label: 'Template Key',

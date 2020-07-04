@@ -36,7 +36,7 @@ const RecipesPage = ({ data }) => {
 
   return (
     <Layout>
-      <RecipestPageTemplate
+      <RecipesPageTemplate
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
         content={post.html}
