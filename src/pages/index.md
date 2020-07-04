@@ -1,11 +1,9 @@
 ---
 templateKey: index-page
-title: Ayurveda, Rezepte, & Lifestyle.
-image: /img/jazmin-quaynor-8ioenvmof-i-unsplash.jpg
+title: Ayurveda, Rezepte, & Lifestyle. 123
+image: /img/hero.jpg
 heading: Heading
-subheading: Ich zeige dir, wie du die Welt bereisen kannst, wie du mit
-  Selbstliebe anfängst, für dich selbst einzustehen und warum es so
-  wichtig ist, deiner eigenen Wahrheit zu folgen.
+subheading: Subheading
 mainpitch:
   title: Why Kaldi
   description: >
