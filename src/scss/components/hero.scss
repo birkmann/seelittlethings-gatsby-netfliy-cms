@@ -72,10 +72,14 @@
     .card {
       margin-top: auto;
       margin-top: 3rem;
+      margin-bottom: 3rem;
       flex: 0 0 360px;
-      border-radius: 0.5rem;
-      overflow: hidden;
+      @media (min-width: $breakpoint-lg) {
+        margin-bottom: 0;
+        margin-top: 2rem;
+      }
       .header {
+        border-radius: 0.5rem 0.5rem 0 0;
         width: 100%;
         height: 17rem;
         background-position: center;
@@ -86,6 +90,7 @@
         background: linear-gradient(to right, #71ad9b 0%, #57917f 100%);
         color: #fff;
         padding: 2rem 3rem 3rem;
+        border-radius: 0 0 0.5rem 0.5rem;
         h4 {
           font-weight: 100;
         }
