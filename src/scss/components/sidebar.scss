@@ -7,6 +7,10 @@
   padding: 2rem 1rem;
   display: flex;
   justify-content: center;
+  display: none;
+  @media (min-width: $breakpoint-lg) {
+    display: flex;
+  }
   .nav-icon {
     width: 30px;
     height: 25px;

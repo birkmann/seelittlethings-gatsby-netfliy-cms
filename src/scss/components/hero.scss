@@ -4,8 +4,12 @@
   background-position: center center;
   background-size: cover;
   position: relative;
+  padding-top: 10rem;
+  @media (min-width: $breakpoint-lg) {
+    padding-top: 8rem;
+  }
   &:before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     right: 0;
@@ -17,31 +21,47 @@
     position: relative;
     z-index: 1;
     display: flex;
-    height: 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
+    @media (min-width: $breakpoint-lg) {
+      flex-direction: row;
+    }
     .text {
-      padding: 5rem;
       color: #fff;
-      max-width: 75rem;
+      @media (min-width: $breakpoint-lg) {
+        padding-right: 5rem;
+        max-width: 60vw;
+      }
       h2 {
-        font-size: 6.75rem;
+        font-size: 2rem;
         line-height: 1em;
+        @media (min-width: $breakpoint-lg) {
+          font-size: 3rem;
+        }
+        @media (min-width: $breakpoint-xxl) {
+          font-size: 6.75rem;
+        }
       }
       p {
         margin-top: 2rem;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         line-height: 1.4em;
         max-width: 50rem;
+        @media (min-width: $breakpoint-xxl) {
+          font-size: 1.5rem;
+        }
       }
       .btn-wrapper {
         margin-top: 4rem;
         a.btn {
-          margin-right: 1rem;
+          margin: 0.5rem 1rem 0.5rem 0;
           border: 1px solid #fff;
           padding: 0.75rem 1.5rem;
           border-radius: 3rem;
           color: #fff;
           text-decoration: none;
+          display: inline-block;
           &.primary {
             background: $color-secondary-2-3;
             border: 1px solid $color-secondary-2-3;
@@ -51,9 +71,8 @@
     }
     .card {
       margin-top: auto;
-      margin-bottom: -2rem;
-      margin-left: -5rem;
-      flex: 0 0 450px;
+      margin-top: 3rem;
+      flex: 0 0 360px;
       border-radius: 0.5rem;
       overflow: hidden;
       .header {
@@ -67,8 +86,11 @@
         background: linear-gradient(to right, #71ad9b 0%, #57917f 100%);
         color: #fff;
         padding: 2rem 3rem 3rem;
+        h4 {
+          font-weight: 100;
+        }
         h3 {
-          font-size: 2.25rem;
+          font-size: 1.5rem;
           line-height: 1em;
           margin-bottom: 1rem;
           margin-top: 0.75rem;
@@ -76,7 +98,7 @@
         .tags {
           margin-top: 1rem;
           span {
-            margin-right: 0.1rem;
+            margin-right: 0.75rem;
             background: rgba(0, 0, 0, 0.25);
             display: inline-flex;
             padding: 0.25rem 1rem;

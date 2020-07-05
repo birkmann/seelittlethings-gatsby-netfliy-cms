@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;0,800;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;0,800;1,400&display=swap");
 
-@import 'vars.scss';
-@import 'sidebar.scss';
-@import 'header.scss';
-@import 'hero.scss';
-@import 'intro.scss';
+@import "vars.scss";
+@import "grid.scss";
+@import "components/header.scss";
+@import "components/hero.scss";
+@import "components/intro.scss";
+@import "components/sidebar.scss";
 
 * {
   margin: 0;
@@ -13,10 +14,10 @@
 }
 
 @font-face {
-  font-family: 'Gabriola';
+  font-family: "Gabriola";
   font-style: normal;
   font-weight: normal;
-  src: local('Gabriola'), url('../fonts/gabriola.woff') format('woff');
+  src: local("Gabriola"), url("../fonts/gabriola.woff") format("woff");
 }
 
 html {
@@ -24,14 +25,8 @@ html {
 }
 
 body {
-  font: 16px/1.6em 'Open Sans', sans-serif;
+  font: 16px/1.6em "Open Sans", sans-serif;
   background: #f6f6f6;
-}
-
-.container {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 3rem;
 }
 
 .page {
@@ -39,8 +34,10 @@ body {
 }
 
 .page-main {
-  margin-left: 5rem;
-  width: calc(100% - 5rem);
+  @media (min-width: $breakpoint-lg) {
+    margin-left: 5rem;
+    width: calc(100% - 5rem);
+  }
 }
 
 .hidden {
